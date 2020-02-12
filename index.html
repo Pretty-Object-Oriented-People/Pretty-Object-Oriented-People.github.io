@@ -6,6 +6,35 @@
 	<style type="text/css">
 		body {
 			margin: 0;
+			color: white;
+		}
+
+		a {
+			color: white;
+		}
+
+		a:link {
+			border: 0;
+			border-bottom: dashed white;
+		}
+
+		a:hover {
+			color: lightgrey;
+			border-bottom-color: grey;
+		}
+
+		a:visited {
+			border-bottom: dotted white;
+		}
+
+		.text-muted {
+			color: lightgrey!important;
+			font-weight: 100;
+		}
+
+		.page-size {
+			width: 100vw;
+			height: 100vh;
 		}
 
 		.background-grad {
@@ -27,11 +56,48 @@
 		.background-grad:nth-of-type(3) {
 			background: repeat url(http://api.thumbr.it/whitenoise-256x256.png?background=4f189600&noise=2dd9f0&density=30&opacity=11);
 		}
+
+		#center-main-contents {
+			position: relative;
+			text-align: center;
+		}
+
+		#eridani-logo {
+			max-width: 50vw;
+			max-height: 50vh;
+			object-fit: contain;
+		}
+
+		#org-logo {
+			max-width: 5vw;
+			max-height: 5vh;
+			object-fit: contain;
+		}
+
+		#footer-github {
+			position: fixed;
+			bottom: 1vh;
+			width: 100%;
+			text-align: center;
+			font-size: large;
+		}
 	</style>
 </head>
 <body>
 <div class="background-grad"></div>
 <div class="background-grad"></div>
 <div class="background-grad"></div>
+<div class="center-container page-size d-flex flex-column justify-content-center">
+	<div id="center-main-contents">
+		<img id="eridani-logo" src="resources/Eridani_W.png" alt="Eridani Logo" class="my-auto">
+		<br>
+		<div><h1>Eridani Ψ Gn-z11<br>
+		<small class="text-muted"><i>by Pretty Object Oriented People</i></small></h1></div>
+		<img id="org-logo" src="resources/Org_W.png" alt="Organization Logo" class="my-auto">
+	</div>
+</div>
+<div id="footer-github">
+	Check the project out on <a href="https://github.com/Pretty-Object-Oriented-People/Eridani-Psi-Gn-z11">GitHub</a>
+</div>
 </body>
 </html>
